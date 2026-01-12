@@ -1,13 +1,17 @@
 from __future__ import annotations
+import os, sys
+ROOT = os.path.dirname(os.path.abspath(__file__))
+MODS = os.path.join(ROOT, 'app_modules')
+if MODS not in sys.path: sys.path.insert(0, MODS)
 import streamlit as st
 import pandas as pd
 
-from app_lib.privacy import password_gate, safe_warning, mask_name
-from app_lib.schema import ColumnMap, available_columns
-from app_lib.transform import build_client_table
-from app_lib.rules import classify_farol
-from app_lib.credit import credit_eligibility, score_priority_credit
-from app_lib.viz import plot_bar, plot_hist, plot_farol_donut
+from privacy import password_gate, safe_warning, mask_name
+from schema import ColumnMap, available_columns
+from transform import build_client_table
+from rules import classify_farol
+from credit import credit_eligibility, score_priority_credit
+from viz import plot_bar, plot_hist, plot_farol_donut
 
 st.set_page_config(
     page_title="Carteira PF | Encarteiramento + Crédito",
