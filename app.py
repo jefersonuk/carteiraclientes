@@ -1,8 +1,4 @@
 from __future__ import annotations
-import os, sys
-ROOT = os.path.dirname(os.path.abspath(__file__))
-MODS = os.path.join(ROOT, 'app_modules')
-if MODS not in sys.path: sys.path.insert(0, MODS)
 import streamlit as st
 import pandas as pd
 

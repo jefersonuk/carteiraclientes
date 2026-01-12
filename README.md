@@ -24,5 +24,5 @@ APP_PASSWORD="sua_senha_forte"
 No Streamlit Cloud, configure o mesmo em Secrets.
 
 
-## Estrutura interna
-Os módulos Python ficam em `app_modules/` para evitar conflitos de import no Streamlit Cloud.
+## Estrutura
+Os módulos Python ficam na raiz do projeto (ex: `privacy.py`, `rules.py`) para evitar problemas de import no Streamlit Cloud.
