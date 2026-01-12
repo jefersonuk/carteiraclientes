@@ -1,0 +1,23 @@
+# Dados e arquivos locais
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.json
+*.db
+*.sqlite
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
