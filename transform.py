@@ -2,7 +2,8 @@ from __future__ import annotations
 import pandas as pd
 import numpy as np
 from datetime import datetime
-from .schema import ColumnMap
+from schema import ColumnMap
+
 
 def _to_datetime(s: pd.Series) -> pd.Series:
     return pd.to_datetime(s, errors="coerce", dayfirst=True)
